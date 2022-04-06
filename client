@@ -10,3 +10,4 @@ while(True):
     os.system("set-net networks-config-2.xml")
     #os.system("get-net networks.xml networks-state-1.xml")
     time.sleep(5)
+    
