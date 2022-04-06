@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#Usage:
+# elsys-switch-set [0|1]
+
+
+echo 23 > /sys/class/gpio/export || true
+echo out > /sys/class/gpio/gpio23/direction || true
+if [ "$1" == "1" ] ; then
+  echo 1 > /sys/class/gpio/gpio23/value
+else
+  echo 0 > /sys/class/gpio/gpio23/value
+fi
+
+ 

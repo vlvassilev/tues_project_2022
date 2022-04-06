@@ -1,0 +1,23 @@
+module elsys-switch {
+  yang-version 1.1;
+  namespace "urn:elsys:params:xml:ns:yang:switch";
+  prefix switch;
+
+  organization  "ELSYS";
+
+  description
+    "Electrical switch/relay management module.";
+
+  revision 2022-03-29 {
+    description
+      "Initial version.";
+  }
+
+  container switch {
+    leaf enabled {
+      description "When true the switch is turned on.";
+      type boolean;
+    }
+  }
+}
+ 
