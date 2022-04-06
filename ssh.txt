@@ -1,0 +1,93 @@
+user@lmf:~$ ssh user@lightside-instruments.com  -p10843 -s netconf
+user@lightside-instruments.com's password: 
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"
+  xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <capabilities>
+    <capability>urn:ietf:params:netconf:base:1.0</capability>
+    <capability>urn:ietf:params:netconf:base:1.1</capability>
+    <capability>urn:ietf:params:netconf:capability:candidate:1.0</capability>
+    <capability>urn:ietf:params:netconf:capability:confirmed-commit:1.0</capability>
+    <capability>urn:ietf:params:netconf:capability:confirmed-commit:1.1</capability>
+    <capability>urn:ietf:params:netconf:capability:rollback-on-error:1.0</capability>
+    <capability>urn:ietf:params:netconf:capability:validate:1.0</capability>
+    <capability>urn:ietf:params:netconf:capability:validate:1.1</capability>
+    <capability>urn:ietf:params:netconf:capability:url:1.0?scheme=file</capability>
+    <capability>urn:ietf:params:netconf:capability:xpath:1.0</capability>
+    <capability>urn:ietf:params:netconf:capability:notification:1.0</capability>
+    <capability>urn:ietf:params:netconf:capability:interleave:1.0</capability>
+    <capability>urn:ietf:params:netconf:capability:partial-lock:1.0</capability>
+    <capability>urn:ietf:params:netconf:capability:with-defaults:1.0?basic-mode=explicit&amp;also-supported=trim,report-all,report-all-tagged</capability>
+    <capability>urn:elsys:params:xml:ns:yang:switch?module=elsys-switch&amp;revision=2022-03-29</capability>
+    <capability>urn:ietf:params:xml:ns:yang:iana-crypt-hash?module=iana-crypt-hash&amp;revision=2014-08-06&amp;features=crypt-hash-md5,crypt-hash-sha-256,crypt-hash-sha-512</capability>
+    <capability>urn:ietf:params:xml:ns:yang:ietf-inet-types?module=ietf-inet-types&amp;revision=2013-07-15</capability>
+    <capability>urn:ietf:params:xml:ns:yang:ietf-netconf-acm?module=ietf-netconf-acm&amp;revision=2018-02-14</capability>
+    <capability>urn:ietf:params:xml:ns:yang:ietf-netconf-monitoring?module=ietf-netconf-monitoring&amp;revision=2010-10-04</capability>
+    <capability>urn:ietf:params:xml:ns:yang:ietf-netconf-notifications?module=ietf-netconf-notifications&amp;revision=2012-02-06</capability>
+    <capability>urn:ietf:params:xml:ns:netconf:partial-lock:1.0?module=ietf-netconf-partial-lock&amp;revision=2009-10-19</capability>
+    <capability>urn:ietf:params:xml:ns:yang:ietf-netconf-with-defaults?module=ietf-netconf-with-defaults&amp;revision=2011-06-01</capability>
+    <capability>urn:ietf:params:xml:ns:yang:ietf-system?module=ietf-system&amp;revision=2014-08-06&amp;features=radius,authentication,local-users,radius-authentication,ntp,ntp-udp-port,timezone-name,dns-udp-tcp-port</capability>
+    <capability>urn:ietf:params:xml:ns:yang:ietf-yang-library?module=ietf-yang-library&amp;revision=2016-06-21</capability>
+    <capability>urn:ietf:params:xml:ns:yang:ietf-yang-types?module=ietf-yang-types&amp;revision=2013-07-15</capability>
+    <capability>urn:lsi:params:xml:ns:yang:lsi-camera?module=lsi-camera&amp;revision=2022-03-07</capability>
+    <capability>urn:ietf:params:xml:ns:netmod:notification?module=nc-notifications&amp;revision=2008-07-14</capability>
+    <capability>urn:ietf:params:xml:ns:netconf:notification:1.0?module=notifications&amp;revision=2008-07-14</capability>
+    <capability>http://netconfcentral.org/ns/yuma-app-common?module=yuma-app-common&amp;revision=2012-08-16</capability>
+    <capability>http://netconfcentral.org/ns/yuma-mysession?module=yuma-mysession&amp;revision=2010-05-10</capability>
+    <capability>http://netconfcentral.org/ns/yuma-ncx?module=yuma-ncx&amp;revision=2012-01-13</capability>
+    <capability>http://netconfcentral.org/ns/yuma-proc?module=yuma-proc&amp;revision=2012-10-10</capability>
+    <capability>http://netconfcentral.org/ns/yuma-time-filter?module=yuma-time-filter&amp;revision=2012-11-15</capability>
+    <capability>http://netconfcentral.org/ns/yuma-types?module=yuma-types&amp;revision=2012-06-01</capability>
+    <capability>http://yuma123.org/ns/yuma123-mysession-cache?module=yuma123-mysession-cache&amp;revision=2018-11-12</capability>
+    <capability>urn:ietf:params:xml:ns:netconf:base:1.0?module=ietf-netconf&amp;revision=2011-06-01&amp;features=writable-running,candidate,confirmed-commit,rollback-on-error,validate,startup,url,xpath</capability>
+    <capability>http://yuma123.org/ns/yuma123-netconf-types?module=yuma123-netconf-types&amp;revision=2017-06-23</capability>
+    <capability>http://yuma123.org/ns/yuma123-system?module=yuma123-system&amp;revision=2017-03-26</capability>
+    <capability>urn:ietf:params:netconf:capability:yang-library:1.0?revision=2016-06-21&amp;module-set-id=2466f63ecf802df4968e3ab143dea1b62fa460d7</capability>
+  </capabilities>
+  <session-id>5</session-id>
+</hello>]]>]]><hello xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"
+ xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+ <capabilities>
+   <capability>urn:ietf:params:netconf:base:1.0</capability>
+ </capabilities>
+</hello>]]>]]>
+<rpc message-id="101"
+  xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <get>
+    <filter type="xpath" select="/variablero"/>
+  </get>
+</rpc>]]>]]>
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc-reply message-id="101"
+  xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"
+  last-modified="2022-03-30T00:10:47Z"
+  xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <data></data>
+</rpc-reply>]]>]]>
+<rpc message-id="101" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+<edit-config>
+ <target>
+   <candidate/>
+ </target>
+ <config  xmlns:xc="urn:ietf:params:xml:ns:netconf:base:1.0">
+   <switch xmlns="urn:elsys:params:xml:ns:yang:switch">
+     <enabled xc:operation="replace">true</enabled>
+   </switch>
+ </config>
+</edit-config>
+</rpc>]]>]]>
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc-reply message-id="101"
+  xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"
+  xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <ok/>
+</rpc-reply>]]>]]><rpc message-id="101" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <commit/>
+</rpc>]]>]]>
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc-reply message-id="101"
+  xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0"
+  xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <ok/>
+</rpc-reply>]]>]]>
+ 

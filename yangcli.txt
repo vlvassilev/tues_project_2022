@@ -1,0 +1,126 @@
+user@lmf:~$ yangcli --server=lightside-instruments.com --ncport=10843 --user=user --password=ietf113 
+
+  yangcli version 2.13-0
+  libssh2 version 1.8.0
+
+  Copyright (c) 2008-2012, Andy Bierman, All Rights Reserved.
+  Copyright (c) 2013-2021, Vladimir Vassilev, All Rights Reserved.
+
+  Type 'help' or 'help <command-name>' to get started
+  Use the <tab> key for command and value completion
+  Use the <enter> key to accept the default value in brackets
+
+  These escape sequences are available when filling parameter values:
+
+	?	help
+	??	full help
+	?s	skip current parameter
+	?c	cancel current command
+
+  These assignment statements are available when entering commands:
+
+	$<varname> = <expr>	Local user variable assignment
+	$$<varname> = <expr>	Global user variable assignment
+	@<filespec> = <expr>	File assignment
+
+yangcli: Starting NETCONF session for user on lightside-instruments.com
+
+NETCONF session established for user on lightside-instruments.com
+
+Client Session Id: 1
+Server Session Id: 16
+
+Server Protocol Capabilities
+   base:1.0
+   candidate:1.0
+   confirmed-commit:1.0
+   rollback-on-error:1.0
+   validate:1.0
+   url:1.0
+   xpath:1.0
+   notification:1.0
+   interleave:1.0
+   partial-lock:1.0
+   with-defaults:1.0
+   base:1.1
+   validate:1.1
+   confirmed-commit:1.1
+   yang-library:1.0
+
+Server Module Capabilities
+   elsys-switch@2022-03-29
+   iana-crypt-hash@2014-08-06
+      Features: 
+         crypt-hash-md5 
+         crypt-hash-sha-256 
+         crypt-hash-sha-512 
+   ietf-inet-types@2013-07-15
+   ietf-netconf-acm@2018-02-14
+   ietf-netconf-monitoring@2010-10-04
+   ietf-netconf-notifications@2012-02-06
+   ietf-netconf-partial-lock@2009-10-19
+   ietf-netconf-with-defaults@2011-06-01
+   ietf-system@2014-08-06
+      Features: 
+         radius 
+         authentication 
+         local-users 
+         radius-authentication 
+         ntp 
+         ntp-udp-port 
+         timezone-name 
+         dns-udp-tcp-port 
+   ietf-yang-library@2016-06-21
+   ietf-yang-types@2013-07-15
+   lsi-camera@2022-03-07
+   nc-notifications@2008-07-14
+   notifications@2008-07-14
+   yuma-app-common@2012-08-16
+   yuma-mysession@2010-05-10
+   yuma-ncx@2012-01-13
+   yuma-proc@2012-10-10
+   yuma-time-filter@2012-11-15
+   yuma-types@2012-06-01
+   yuma123-mysession-cache@2018-11-12
+   ietf-netconf@2011-06-01
+      Features: 
+         writable-running 
+         candidate 
+         confirmed-commit 
+         rollback-on-error 
+         validate 
+         startup 
+         url 
+         xpath 
+   yuma123-netconf-types@2017-06-23
+   yuma123-system@2017-03-26
+
+Server Enterprise Capabilities
+   None
+
+Protocol version set to: RFC 6241 (base:1.1)
+Default target set to: <candidate>
+Save operation mapped to: commit
+Default with-defaults behavior: explicit
+Additional with-defaults behavior: trim,report-all,report-all-tagged
+
+
+Getting yang-library module set  ...
+Current module-set-id: 2466f63ecf802df4968e3ab143dea1b62fa460d7.
+
+
+Checking Server Modules...
+
+yangcli user@lightside-instruments.com> replace /switch/enabled
+
+Filling optional leaf /switch/enabled:
+Enter boolean value for leaf <enabled>
+yangcli user@lightside-instruments.com:replace> false
+
+RPC OK Reply 2 for session 16:
+
+yangcli user@lightside-instruments.com> commit
+
+RPC OK Reply 3 for session 16:
+
+yangcli user@lightside-instruments.com>
