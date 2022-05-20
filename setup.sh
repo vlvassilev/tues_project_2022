@@ -44,6 +44,7 @@ autoreconf -i -f
 make
 make install
 
+cd
 git clone https://github.com/dip2022/diploma_project.git
 cd diploma_project
 autoreconf -i -f
