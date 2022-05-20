@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <networks xmlns="urn:ietf:params:xml:ns:yang:ietf-network">
+    <network>
+      <network-id>elsys</network-id>
+      <node>
+        <node-id>spark-relay-actuator1</node-id>
+        <netconf-connect-params xmlns="urn:tntapi:netconf-node">
+          <user>user</user>
+          <server>lightside-instruments.com</server>
+          <password>ietf113</password>
+          <ncport>10831</ncport>
+        </netconf-connect-params>
+        <netconf-node:config xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:netconf-node="urn:tntapi:netconf-node" xmlns:nt="urn:ietf:params:xml:ns:yang:ietf-network-topology"><switch xmlns="urn:elsys:params:xml:ns:yang:switch">
+            <enabled>false</enabled>
+          </switch>
+  </netconf-node:config>
+      </node>
+      <node>
+        <node-id>spark-relay-actuator2</node-id>
+        <netconf-connect-params xmlns="urn:tntapi:netconf-node">
+          <user>user</user>
+          <server>lightside-instruments.com</server>
+          <password>ietf113</password>
+          <ncport>10832</ncport>
+        </netconf-connect-params>
+        <netconf-node:config xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:netconf-node="urn:tntapi:netconf-node" xmlns:nt="urn:ietf:params:xml:ns:yang:ietf-network-topology"><switch xmlns="urn:elsys:params:xml:ns:yang:switch">
+            <enabled>false</enabled>
+          </switch>
+  </netconf-node:config>
+      </node>
+      <node>
+        <node-id>spark-relay-actuator3</node-id>
+        <netconf-connect-params xmlns="urn:tntapi:netconf-node">
+          <user>user</user>
+          <server>lightside-instruments.com</server>
+          <password>ietf113</password>
+          <ncport>10833</ncport>
+        </netconf-connect-params>
+        <netconf-node:config xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:netconf-node="urn:tntapi:netconf-node" xmlns:nt="urn:ietf:params:xml:ns:yang:ietf-network-topology"><switch xmlns="urn:elsys:params:xml:ns:yang:switch">
+            <enabled>true</enabled>
+          </switch>
+  </netconf-node:config>
+      </node>
+    </network></networks>
+</config>
+

@@ -9,7 +9,7 @@
           <user>user</user>
           <server>lightside-instruments.com</server>
           <password>ietf113</password>
-          <ncport>10843</ncport>
+          <ncport>10833</ncport>
         </netconf-connect-params>
         <netconf-node:config xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:netconf-node="urn:tntapi:netconf-node" xmlns:nt="urn:ietf:params:xml:ns:yang:ietf-network-topology"><switch xmlns="urn:elsys:params:xml:ns:yang:switch">
             <enabled>false</enabled>
