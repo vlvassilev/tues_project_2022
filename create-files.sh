@@ -15,7 +15,7 @@ EOF
 
 #EDIT2:
 
-cat >/etc/rc.local<<EOF
+cat >/etc/rc.local<< 'EOF'
 #!/bin/sh -e
 
 ulimit -c unlimited
@@ -70,7 +70,7 @@ EOF
 #EDIT4:
 #Add static ip instead of lightside-instruments.com to /etc/hostname
 
-cat >/etc/hostname<<EOF
+cat >/etc/hosts<<EOF
 192.168.209.35  lightside-instruments.com
 127.0.0.1	localhost
 ::1		localhost ip6-localhost ip6-loopback
